@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Section {
+  id          String      @id @default(cuid())
+  order       Int         @unique
+  title       String
+  emoji       String?
+  description String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  taskGroups  TaskGroup[]
+}
+
+model TaskGroup {
+  id           String   @id @default(cuid())
+  order        Int
+  title        String
+  description  String?
+  documentLink String?
+  sectionId    String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  section      Section  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  tasks        Task[]
+
+  @@unique([sectionId, order])
+}
+
+model Task {
+  id          String    @id @default(cuid())
+  order       Int
+  title       String
+  isCompleted Boolean   @default(false)
+  completedAt DateTime?
+  taskGroupId String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  taskGroup   TaskGroup @relation(fields: [taskGroupId], references: [id], onDelete: Cascade)
+
+  @@unique([taskGroupId, order])
+}
