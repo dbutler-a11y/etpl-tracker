@@ -41,8 +41,8 @@ export default function BrochurePage() {
         <div className="max-w-4xl mx-auto px-4 print:max-w-none print:px-0 space-y-8 print:space-y-0">
 
           {/* ========== SLIDE 1: TITLE ========== */}
-          <div className="slide bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white">
-            <div className="slide-content flex flex-col justify-center items-center text-center h-full">
+          <div className="aspect-[8.5/11] bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="flex-1 p-8 flex flex-col justify-center items-center text-center h-full">
               <div className="mb-8">
                 <div className="inline-flex items-center gap-2 px-5 py-2 bg-white/15 backdrop-blur rounded-full text-sm font-semibold tracking-wide mb-8">
                   WORKFORCE DEVELOPMENT CREDENTIAL
@@ -73,18 +73,18 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer text-blue-200">
+            <div className="py-4 px-8 text-center text-sm text-blue-200 border-t border-white/20">
               Texas ETPL Program Documentation
             </div>
           </div>
 
           {/* ========== SLIDE 2: PROGRAM OVERVIEW ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">01</div>
-              <h2 className="slide-title">Program Overview</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">01</div>
+              <h2 className="text-2xl font-bold text-slate-900">Program Overview</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="text-xl text-slate-700 leading-relaxed mb-10 max-w-3xl">
                 The AI Capability Specialist Certificate is a <strong className="text-blue-600">24-hour intensive workforce development credential</strong> designed to prepare individuals for technology support roles in AI-enhanced business environments.
               </div>
@@ -141,18 +141,18 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 3: VALUE STACK ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">02</div>
-              <h2 className="slide-title">What's Included</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">02</div>
+              <h2 className="text-2xl font-bold text-slate-900">What's Included</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="text-lg text-slate-600 mb-8">Complete program value breakdown:</div>
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -193,18 +193,18 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 4: CURRICULUM ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">03</div>
-              <h2 className="slide-title">24-Hour Curriculum</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">03</div>
+              <h2 className="text-2xl font-bold text-slate-900">24-Hour Curriculum</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="space-y-3">
                 {[
                   { num: 1, title: "AI Fundamentals & Digital Readiness", hours: 4, color: "blue" },
@@ -231,18 +231,18 @@ export default function BrochurePage() {
                 <span className="text-3xl font-bold">24</span>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 5: AI TOOLS ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">04</div>
-              <h2 className="slide-title">Premium AI Tool Suite</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">04</div>
+              <h2 className="text-2xl font-bold text-slate-900">Premium AI Tool Suite</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="text-sm text-slate-600 mb-4">
                 Access to 25+ industry-leading AI platforms — the same tools used by professionals in AI-enhanced workplaces.
               </div>
@@ -300,18 +300,18 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 6: CAREER OUTCOMES ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">05</div>
-              <h2 className="slide-title">Career Outcomes</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">05</div>
+              <h2 className="text-2xl font-bold text-slate-900">Career Outcomes</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 mb-4">Target Occupations (SOC Codes)</h3>
@@ -365,18 +365,18 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 7: BRANDVOICE PARTNERSHIP ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">06</div>
-              <h2 className="slide-title">BrandVoice Employment Partnership</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">06</div>
+              <h2 className="text-2xl font-bold text-slate-900">BrandVoice Employment Partnership</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="text-lg text-slate-700 mb-6">
                 Strategic partnership providing qualified graduates with <strong className="text-slate-900">guaranteed interview opportunities</strong> at BrandVoice, an AI-powered content and communications technology company.
               </div>
@@ -432,18 +432,18 @@ export default function BrochurePage() {
                 </p>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 8: ADDITIONAL TRAINING ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">07</div>
-              <h2 className="slide-title">Free Additional Training</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">07</div>
+              <h2 className="text-2xl font-bold text-slate-900">Free Additional Training</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="text-base text-slate-600 mb-6">
                 Graduates receive continued training at <strong className="text-slate-900">no additional cost</strong> until they secure employment.
               </div>
@@ -486,18 +486,18 @@ export default function BrochurePage() {
                 </p>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 9: PROGRAM COSTS ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">08</div>
-              <h2 className="slide-title">Program Costs</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">08</div>
+              <h2 className="text-2xl font-bold text-slate-900">Program Costs</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="grid md:grid-cols-2 gap-10">
                 <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden">
                   <div className="bg-slate-50 px-6 py-4 border-b">
@@ -555,18 +555,18 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 10: ADMISSION REQUIREMENTS ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">09</div>
-              <h2 className="slide-title">Admission & Requirements</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">09</div>
+              <h2 className="text-2xl font-bold text-slate-900">Admission & Requirements</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
                   <h3 className="font-bold text-slate-900 mb-4 text-lg">Prerequisites</h3>
@@ -643,18 +643,18 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 11: COMPLIANCE ========== */}
-          <div className="slide">
-            <div className="slide-header">
-              <div className="slide-number">10</div>
-              <h2 className="slide-title">Compliance & Policies</h2>
+          <div className="aspect-[8.5/11] bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto print:break-after-page">
+            <div className="py-6 px-8 flex items-center gap-4 border-b border-slate-200">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0">10</div>
+              <h2 className="text-2xl font-bold text-slate-900">Compliance & Policies</h2>
             </div>
-            <div className="slide-content">
+            <div className="flex-1 p-8 overflow-hidden">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
                   <h3 className="font-bold text-slate-900 mb-3">Equal Opportunity</h3>
@@ -685,14 +685,14 @@ export default function BrochurePage() {
                 </div>
               </div>
             </div>
-            <div className="slide-footer">
+            <div className="py-4 px-8 text-center text-sm text-slate-500 border-t border-slate-200">
               AI Capability Specialist Certificate
             </div>
           </div>
 
           {/* ========== SLIDE 12: CLOSING ========== */}
-          <div className="slide bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-            <div className="slide-content flex flex-col justify-center items-center text-center h-full">
+          <div className="aspect-[8.5/11] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-2xl shadow-lg flex flex-col overflow-hidden print:rounded-none print:shadow-none print:h-screen print:aspect-auto">
+            <div className="flex-1 p-8 flex flex-col justify-center items-center text-center h-full">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
               <p className="text-xl text-slate-300 mb-12 max-w-2xl">
                 Join the AI Capability Specialist Certificate program and gain the skills, tools, and employer connections you need for the AI-enhanced workplace.
@@ -725,102 +725,6 @@ export default function BrochurePage() {
 
         </div>
       </div>
-
-      {/* Print styles */}
-      <style jsx global>{`
-        .slide {
-          aspect-ratio: 8.5 / 11;
-          max-height: 100vh;
-          background: white;
-          border-radius: 16px;
-          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-          display: flex;
-          flex-direction: column;
-          overflow: hidden;
-          position: relative;
-        }
-
-        .slide-header {
-          padding: 2rem 2.5rem 1.5rem;
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          border-bottom: 1px solid #e2e8f0;
-        }
-
-        .slide-number {
-          width: 3rem;
-          height: 3rem;
-          background: linear-gradient(135deg, #2563eb, #4f46e5);
-          color: white;
-          border-radius: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 0.875rem;
-          font-weight: 700;
-          flex-shrink: 0;
-        }
-
-        .slide-title {
-          font-size: 1.75rem;
-          font-weight: 700;
-          color: #0f172a;
-          margin: 0;
-        }
-
-        .slide-content {
-          flex: 1;
-          padding: 2rem 2.5rem;
-          overflow: hidden;
-        }
-
-        .slide-footer {
-          padding: 1rem 2.5rem;
-          text-align: center;
-          font-size: 0.875rem;
-          color: #64748b;
-          border-top: 1px solid #e2e8f0;
-        }
-
-        @media print {
-          @page {
-            size: letter;
-            margin: 0;
-          }
-
-          body {
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-          }
-
-          .slide {
-            page-break-after: always;
-            page-break-inside: avoid;
-            border-radius: 0;
-            box-shadow: none;
-            height: 100vh;
-            max-height: none;
-            aspect-ratio: auto;
-          }
-
-          .slide:last-child {
-            page-break-after: auto;
-          }
-
-          .slide-header {
-            padding: 1.5rem 2rem 1rem;
-          }
-
-          .slide-content {
-            padding: 1.5rem 2rem;
-          }
-
-          .slide-footer {
-            padding: 0.75rem 2rem;
-          }
-        }
-      `}</style>
     </div>
   );
 }
