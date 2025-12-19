@@ -709,37 +709,33 @@ export default function SubmissionPacketPage() {
             </div>
           </div>
 
-          {/* ==================== CERTIFICATION & SIGNATURE ==================== */}
+          {/* ==================== PROVIDER CONTACT ==================== */}
           <div className="px-8 py-8 bg-gray-50">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Provider Certification</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Provider Contact Information</h2>
 
             <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-              <p className="text-gray-700 mb-4 text-sm">
-                I certify that all information provided in this application and supporting documents is true and accurate to the best of my knowledge. I understand that providing false information may result in denial or revocation of ETPL eligibility.
-              </p>
-
-              <p className="text-gray-700 mb-6 text-sm">
-                I further certify that the Institute for AI Innovation agrees to comply with all applicable federal, state, and local laws, regulations, and policies governing WIOA-funded training programs.
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <div className="border-b-2 border-gray-400 pb-2 mb-2 h-12"></div>
-                  <div className="text-sm text-gray-500">Authorized Signature</div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Organization</h3>
+                  <div className="text-gray-700">
+                    <div className="font-medium text-lg">Institute for AI Innovation</div>
+                    <div className="text-gray-500">by Eula Properties LLC</div>
+                  </div>
                 </div>
                 <div>
-                  <div className="border-b-2 border-gray-400 pb-2 mb-2 h-12"></div>
-                  <div className="text-sm text-gray-500">Date</div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Primary Location</h3>
+                  <div className="text-gray-700">
+                    11139 Homestead Rd<br />
+                    Houston, TX 77016
+                  </div>
                 </div>
-              </div>
-
-              <div className="mt-6 pt-6 border-t">
-                <div className="text-sm text-gray-600">
-                  <strong>Provider Contact:</strong><br />
-                  Institute for AI Innovation<br />
-                  by Eula Properties LLC<br />
-                  11139 Homestead Rd, Houston, TX 77016<br />
-                  InstituteForAIInnovation.org
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Website</h3>
+                  <div className="text-blue-600 font-medium">InstituteForAIInnovation.org</div>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Application Date</h3>
+                  <div className="text-gray-700">December 2025</div>
                 </div>
               </div>
             </div>
