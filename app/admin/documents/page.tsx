@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FileText, Building, DollarSign, BookOpen, Scale, Shield, Heart, Briefcase, ClipboardList, Send, MessageSquare, BookMarked, Download, GraduationCap, Calendar, FileSignature, Award, Zap, Wrench, Monitor, Package, ArrowLeft } from "lucide-react";
+import { FileText, Building, DollarSign, BookOpen, Scale, Shield, Heart, Briefcase, ClipboardList, Send, MessageSquare, BookMarked, Download, GraduationCap, Calendar, FileSignature, Award, Zap, Wrench, Monitor, Package, ArrowLeft, BarChart3 } from "lucide-react";
 
 const studentDocuments = [
   {
@@ -135,6 +135,13 @@ const documents = [
     href: "/admin/documents/appeal-language",
     icon: Building,
   },
+  {
+    section: "Section 21",
+    title: "Student Data Report (SDR)",
+    description: "WIOA performance indicators & TWC accountability data",
+    href: "/admin/documents/student-data-report",
+    icon: BarChart3,
+  },
 ];
 
 export default function AdminDocumentsPage() {
@@ -236,6 +243,31 @@ export default function AdminDocumentsPage() {
             </div>
           </Link>
         </div>
+
+        {/* Student Data Report Feature */}
+        <Link
+          href="/admin/documents/student-data-report"
+          className="block bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 rounded-xl p-4 sm:p-6 text-white hover:shadow-xl transition-all group mb-4 border border-slate-600"
+        >
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="p-2 sm:p-3 bg-white/10 rounded-xl group-hover:bg-white/20 transition-colors">
+              <BarChart3 className="h-6 w-6 sm:h-8 sm:w-8" />
+            </div>
+            <div className="flex-1">
+              <div className="text-slate-400 text-xs font-medium mb-0.5 sm:mb-1">TWC/WIOA Required</div>
+              <h3 className="text-base sm:text-lg font-bold group-hover:text-blue-300 transition-colors">
+                Student Data Report (SDR)
+              </h3>
+              <p className="text-slate-400 text-xs sm:text-sm mt-0.5 sm:mt-1">
+                WIOA performance indicators, employment outcomes, credential attainment & accountability data
+              </p>
+            </div>
+            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-blue-600 rounded-lg text-xs font-medium group-hover:bg-blue-500 transition-colors">
+              <BarChart3 className="h-3 w-3" />
+              View Report
+            </div>
+          </div>
+        </Link>
 
         {/* Workforce Board Submission Packet */}
         <Link
