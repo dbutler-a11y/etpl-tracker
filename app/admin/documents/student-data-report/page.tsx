@@ -11,8 +11,8 @@ export default function StudentDataReportPage() {
       <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 mb-10 not-prose shadow-lg">
         <div className="flex items-start justify-between">
           <div>
-            <span className="text-slate-400 text-sm uppercase tracking-wide font-medium">Performance Year 2025</span>
-            <h2 className="text-2xl font-bold mt-1 mb-4 text-white">Student Data Report (SDR)</h2>
+            <span className="text-slate-400 text-sm uppercase tracking-wide font-medium">Performance Year 2026</span>
+            <h2 className="text-2xl font-bold mt-1 mb-4" style={{ color: '#ffffff' }}>Student Data Report (SDR)</h2>
             <p className="text-slate-300 leading-relaxed max-w-2xl">
               This comprehensive report documents student outcomes, performance metrics, and
               accountability data in accordance with Texas Workforce Commission (TWC) ETPL
@@ -214,7 +214,7 @@ export default function StudentDataReportPage() {
       <h2>Projected Enrollment & Completion Data</h2>
 
       <div className="bg-slate-50 rounded-xl p-6 my-6 not-prose">
-        <h3 className="font-bold text-slate-900 mb-4">Year 1 Projections (Program Year 2025)</h3>
+        <h3 className="font-bold text-slate-900 mb-4">Year 1 Projections (Program Year 2026)</h3>
         <div className="grid md:grid-cols-4 gap-4">
           <div className="bg-white rounded-lg p-4 border border-slate-200 text-center">
             <div className="text-2xl font-bold text-slate-900">48</div>
@@ -679,18 +679,24 @@ export default function StudentDataReportPage() {
         </p>
         <div className="grid md:grid-cols-2 gap-8 my-6 not-prose">
           <div>
-            <div className="border-b-2 border-slate-300 pb-8 mb-2"></div>
+            <div className="border-b-2 border-slate-300 pb-2 mb-2 min-h-[60px] flex items-end">
+              <span style={{ fontFamily: 'var(--font-signature), cursive', fontSize: '32px', color: '#1e3a5f' }}>
+                Durayveon Butler
+              </span>
+            </div>
             <div className="text-sm text-slate-600">Authorized Representative Signature</div>
           </div>
           <div>
-            <div className="border-b-2 border-slate-300 pb-8 mb-2"></div>
+            <div className="border-b-2 border-slate-300 pb-2 mb-2 min-h-[60px] flex items-end">
+              <span className="text-lg text-slate-800">December 19, 2025</span>
+            </div>
             <div className="text-sm text-slate-600">Date</div>
           </div>
         </div>
         <p className="text-sm text-slate-500">
           <strong>Prepared by:</strong> Institute for AI Innovation<br/>
           <strong>Report Date:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}<br/>
-          <strong>Contact:</strong> etp.reporting@instituteforaiinnovation.org
+          <strong>Contact:</strong> dbutler@eulaproperties.com
         </p>
       </div>
 

@@ -255,7 +255,7 @@ export default function AdminDocumentsPage() {
             </div>
             <div className="flex-1">
               <div className="text-slate-400 text-xs font-medium mb-0.5 sm:mb-1">TWC/WIOA Required</div>
-              <h3 className="text-base sm:text-lg font-bold group-hover:text-blue-300 transition-colors">
+              <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-blue-300 transition-colors">
                 Student Data Report (SDR)
               </h3>
               <p className="text-slate-400 text-xs sm:text-sm mt-0.5 sm:mt-1">

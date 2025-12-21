@@ -2,11 +2,23 @@
 
 import { ArrowRight, Download, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 pt-20">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:20px_20px]" />
+    <section className="relative overflow-hidden min-h-screen pt-20">
+      {/* Background Image - 4K Resolution */}
+      <Image
+        src="/images/hero-bg.png"
+        alt="AI Innovation Learning Environment"
+        fill
+        priority
+        quality={100}
+        className="object-cover object-center"
+        sizes="100vw"
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/80" />
 
       <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-32">
         <div className="text-center">

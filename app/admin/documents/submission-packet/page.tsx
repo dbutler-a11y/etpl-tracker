@@ -93,9 +93,9 @@ export default function SubmissionPacketPage() {
           </div>
 
           {/* ==================== TABLE OF CONTENTS ==================== */}
-          <div className="px-8 py-8 border-b print:py-6 print:break-after-page print:break-inside-avoid">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 print:mb-4 print:text-xl">Table of Contents</h2>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-1 print:gap-y-0">
+          <div className="px-8 py-8 border-b print:py-4 print:px-6 print:break-after-page print:break-inside-avoid">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 print:mb-3 print:text-lg">Table of Contents</h2>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-1 print:gap-x-4 print:gap-y-0">
               {[
                 { num: "1", title: "Program Overview" },
                 { num: "2", title: "TWC Licensing Exemption" },
@@ -114,9 +114,9 @@ export default function SubmissionPacketPage() {
                 { num: "15", title: "Provider Submission Packet" },
                 { num: "16", title: "Workforce Board Appeal Language" },
               ].map((doc) => (
-                <div key={doc.num} className="flex items-center gap-3 py-2 print:py-1.5 border-b border-dashed border-gray-200">
-                  <span className="w-7 h-7 print:w-6 print:h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-sm print:text-xs font-bold flex-shrink-0">{doc.num}</span>
-                  <span className="text-gray-700 print:text-sm">{doc.title}</span>
+                <div key={doc.num} className="flex items-center gap-3 py-2 print:py-1 print:gap-2 border-b border-dashed border-gray-200 print:border-gray-300">
+                  <span className="w-7 h-7 print:w-5 print:h-5 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-sm print:text-[10px] font-bold flex-shrink-0">{doc.num}</span>
+                  <span className="text-gray-700 print:text-xs">{doc.title}</span>
                 </div>
               ))}
             </div>
@@ -732,6 +732,10 @@ export default function SubmissionPacketPage() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-3">Website</h3>
                   <div className="text-blue-600 font-medium">InstituteForAIInnovation.org</div>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Email</h3>
+                  <div className="text-blue-600 font-medium">dbutler@eulaproperties.com</div>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-3">Application Date</h3>

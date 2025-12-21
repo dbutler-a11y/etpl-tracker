@@ -5,7 +5,7 @@ export default function ProviderPacketPage() {
     <DocumentLayout title="Provider Submission Packet" section="Section 15" subtitle="Workforce Board Summary">
       {/* Hero Card */}
       <div className="bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl p-8 mb-10 not-prose text-white shadow-lg">
-        <h2 className="text-2xl font-bold mb-4">Provider Overview</h2>
+        <h2 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>Provider Overview</h2>
         <p className="text-slate-300 text-lg leading-relaxed">
           Consolidated information packet for Workforce Board evaluation and ETPL application processing.
         </p>

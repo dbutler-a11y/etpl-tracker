@@ -102,11 +102,15 @@ export default function PartnersSection() {
                 </ul>
               </div>
 
-              <Button className="w-full sm:w-auto" size="lg">
-                <Handshake className="w-5 h-5" />
-                Partner with Us
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </Button>
+              <div className="flex items-center gap-3 flex-wrap">
+                <Button className="w-full sm:w-auto" size="lg" disabled>
+                  <Handshake className="w-5 h-5" />
+                  Partner with Us
+                </Button>
+                <span className="text-sm font-medium text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                  Coming Soon — Q1 2026
+                </span>
+              </div>
             </CardContent>
           </Card>
 
@@ -148,11 +152,15 @@ export default function PartnersSection() {
                 </ul>
               </div>
 
-              <Button className="w-full sm:w-auto" size="lg">
-                <TrendingUp className="w-5 h-5" />
-                Explore Opportunities
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </Button>
+              <div className="flex items-center gap-3 flex-wrap">
+                <Button className="w-full sm:w-auto" size="lg" disabled>
+                  <TrendingUp className="w-5 h-5" />
+                  Explore Opportunities
+                </Button>
+                <span className="text-sm font-medium text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                  Coming Soon — Q1 2026
+                </span>
+              </div>
             </CardContent>
           </Card>
         </div>

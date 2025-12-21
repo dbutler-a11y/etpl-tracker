@@ -5,7 +5,7 @@ export default function PoliciesPage() {
     <DocumentLayout title="Admissions, Attendance, Grading & Completion" section="Section 9" subtitle="Program Policies">
       {/* Hero Card */}
       <div className="bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl p-8 mb-10 not-prose text-white shadow-lg">
-        <h2 className="text-2xl font-bold mb-4">Program Policies</h2>
+        <h2 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>Program Policies</h2>
         <p className="text-slate-300 text-lg leading-relaxed">
           Clear policies ensure student success. This document outlines eligibility requirements,
           attendance expectations, assessment criteria, and certificate completion requirements

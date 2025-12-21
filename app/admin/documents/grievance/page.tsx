@@ -5,7 +5,7 @@ export default function GrievancePage() {
     <DocumentLayout title="Student Grievance Procedure" section="Section 11" subtitle="Complaint Resolution Process">
       {/* Hero Card */}
       <div className="bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl p-8 mb-10 not-prose text-white shadow-lg">
-        <h2 className="text-2xl font-bold mb-4">Fair & Transparent Resolution Process</h2>
+        <h2 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>Fair & Transparent Resolution Process</h2>
         <p className="text-slate-300 text-lg leading-relaxed">
           This grievance procedure provides students with a clear, fair, and transparent process for
           addressing concerns, complaints, or disputes related to the AI Capability Specialist
