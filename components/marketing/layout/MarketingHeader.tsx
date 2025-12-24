@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -63,10 +64,10 @@ export function MarketingHeader() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-sm"
-          : "bg-white/60 backdrop-blur-sm"
+          ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-gray-200/50"
+          : "bg-white/70 backdrop-blur-md"
       )}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -74,9 +75,17 @@ export function MarketingHeader() {
           <div className="flex-shrink-0">
             <Link
               href="/"
-              className="text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors"
+              className="flex items-center gap-2 text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors"
             >
-              Institute for AI Innovation
+              <Image
+                src="/logo.svg"
+                alt="Institute for AI Innovation Logo"
+                width={36}
+                height={36}
+                className="w-9 h-9"
+              />
+              <span className="hidden sm:inline">Institute for AI Innovation</span>
+              <span className="sm:hidden">IFAI</span>
             </Link>
           </div>
 
@@ -106,12 +115,13 @@ export function MarketingHeader() {
                 variant="outline"
                 size="sm"
                 onClick={() => scrollToSection("#apply")}
+                className="rounded-lg font-medium hover:bg-gray-100 transition-all duration-200"
               >
                 Contact
               </Button>
               <Button
                 size="sm"
-                className="bg-blue-600 hover:bg-blue-700 text-white"
+                className="btn-shine bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-lg font-semibold shadow-md shadow-blue-500/25 transition-all duration-200"
                 onClick={() => scrollToSection("#apply")}
               >
                 Apply Now

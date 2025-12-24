@@ -1,18 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Dancing_Script } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono, Dancing_Script } from "next/font/google";
 import { QueryProvider } from "@/components/providers/QueryProvider";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Premium body font - clean and professional
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Premium display/heading font - modern and bold
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-display",
   subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+// Monospace font for code/numbers
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const dancingScript = Dancing_Script({
@@ -25,6 +37,11 @@ export const metadata: Metadata = {
   title: {
     default: "Institute for AI Innovation | AI Capability Specialist Certificate",
     template: "%s | Institute for AI Innovation",
+  },
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
   description:
     "Launch your AI career in 24 hours with our AI Capability Specialist Certificate. $8,000 program with guaranteed interview pathway, 25+ AI tools, and job placement support. WIOA eligible.",
@@ -97,7 +114,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${dancingScript.variable} antialiased bg-gray-50`}
+        className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${dancingScript.variable} font-sans antialiased bg-gray-50`}
       >
         <QueryProvider>{children}</QueryProvider>
         <Toaster position="bottom-right" richColors />

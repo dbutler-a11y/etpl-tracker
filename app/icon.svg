@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Background gradient - dark purple to dark blue -->
+    <linearGradient id="bgGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <!-- Main gradient for elements -->
+    <linearGradient id="iconGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="30%" stop-color="#c084fc"/>
+      <stop offset="60%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#22d3d1"/>
+    </linearGradient>
+    <!-- Darker shade -->
+    <linearGradient id="darkShade" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect x="0" y="0" width="100" height="100" rx="22" fill="url(#bgGradient)"/>
+
+  <!-- Bottom stair -->
+  <path d="M12 78 L12 68 L35 62 L35 72 Z" fill="url(#darkShade)" opacity="0.9"/>
+  <path d="M35 62 L35 72 L40 70 L40 60 Z" fill="#7c3aed" opacity="0.7"/>
+
+  <!-- Middle stair -->
+  <path d="M22 66 L22 56 L45 50 L45 60 Z" fill="url(#iconGradient)"/>
+  <path d="M45 50 L45 60 L50 58 L50 48 Z" fill="#8b5cf6" opacity="0.8"/>
+
+  <!-- Top stair -->
+  <path d="M32 54 L32 44 L55 38 L55 48 Z" fill="url(#iconGradient)"/>
+  <path d="M55 38 L55 48 L60 46 L60 36 Z" fill="#06b6d4" opacity="0.9"/>
+
+  <!-- Person -->
+  <!-- Head -->
+  <circle cx="43" cy="26" r="6" fill="url(#iconGradient)"/>
+
+  <!-- Body -->
+  <path d="M43 32 L43 44" stroke="url(#iconGradient)" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Back leg -->
+  <path d="M43 44 L35 50 L30 45" stroke="url(#iconGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Front leg -->
+  <path d="M43 44 L50 41 L55 36" stroke="url(#iconGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Arm reaching -->
+  <path d="M43 35 L55 28 L68 22" stroke="url(#iconGradient)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Stacked blocks -->
+  <!-- Bottom block -->
+  <rect x="65" y="50" width="22" height="14" rx="2" fill="url(#darkShade)"/>
+  <path d="M87 50 L87 64 L92 60 L92 46 Z" fill="#6366f1" opacity="0.7"/>
+  <line x1="68" y1="56" x2="82" y2="56" stroke="#a5b4fc" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Middle block -->
+  <rect x="65" y="34" width="22" height="14" rx="2" fill="url(#iconGradient)"/>
+  <path d="M87 34 L87 48 L92 44 L92 30 Z" fill="#0ea5e9" opacity="0.8"/>
+  <line x1="68" y1="40" x2="82" y2="40" stroke="#e0f2fe" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Top block -->
+  <rect x="65" y="18" width="22" height="14" rx="2" fill="#67e8f9"/>
+  <path d="M87 18 L87 32 L92 28 L92 14 Z" fill="#22d3d1" opacity="0.9"/>
+  <line x1="68" y1="24" x2="82" y2="24" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+</svg>
