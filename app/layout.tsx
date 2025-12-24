@@ -39,10 +39,17 @@ export const metadata: Metadata = {
     template: "%s | Institute for AI Innovation",
   },
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
   },
+  manifest: "/site.webmanifest",
+  themeColor: "#0B0F14",
   description:
     "Launch your AI career in 24 hours with our AI Capability Specialist Certificate. $8,000 program with guaranteed interview pathway, 25+ AI tools, and job placement support. WIOA eligible.",
   keywords: [
